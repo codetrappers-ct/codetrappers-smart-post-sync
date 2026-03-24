@@ -1,12 +1,12 @@
-# Coetrappers Smart Post Sync
+# Codetrappers Smart Post Sync
 
-`coetrappers-smart-post-sync` is a wordpress plugin for the Coetrappers project set.
+`codetrappers-smart-post-sync` is a wordpress plugin for the Codetrappers project set.
 Starter plugin for syncing remote records into WordPress posts.
 The codebase is scaffolded to be a clean starting point, not a complete production feature.
 
 ## Project Summary
 
-- Slug: `coetrappers-smart-post-sync`
+- Slug: `codetrappers-smart-post-sync`
 - Type: WordPress plugin
 - Focus: content, sync, api
 
@@ -32,8 +32,8 @@ The codebase is scaffolded to be a clean starting point, not a complete producti
 
 ## How To Extend It
 
-- Activate `coetrappers-smart-post-sync` from the Plugins screen.
-- Use `coetrappers-smart-post-sync.php` as the primary bootstrap file for extension work.
+- Activate `codetrappers-smart-post-sync` from the Plugins screen.
+- Use `codetrappers-smart-post-sync.php` as the primary bootstrap file for extension work.
 - Keep feature logic inside dedicated classes rather than expanding the root file.
 
 ## Development Notes

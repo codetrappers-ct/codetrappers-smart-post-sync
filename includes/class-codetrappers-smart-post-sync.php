@@ -1,12 +1,12 @@
 <?php
-namespace Coetrappers\CoetrappersSmartPostSync;
+namespace Codetrappers\CodetrappersSmartPostSync;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-class CoetrappersSmartPostSyncPlugin {
-	const OPTION_KEY = 'coetrappers-smart-post-sync_settings';
+class CodetrappersSmartPostSyncPlugin {
+	const OPTION_KEY = 'codetrappers-smart-post-sync_settings';
 
 	public function boot() {
 		add_action( 'init', array( $this, 'register_post_meta' ) );
@@ -17,7 +17,7 @@ class CoetrappersSmartPostSyncPlugin {
 	public function register_post_meta() {
 		register_post_meta(
 			'',
-			'_coetrappers-smart-post-sync_status',
+			'_codetrappers-smart-post-sync_status',
 			array(
 				'show_in_rest'      => true,
 				'single'            => true,
@@ -63,7 +63,7 @@ class CoetrappersSmartPostSyncPlugin {
 
 		$screen = function_exists( 'get_current_screen' ) ? get_current_screen() : null;
 
-		if ( ! $screen || 'settings_page_coetrappers-smart-post-sync' === $screen->id ) {
+		if ( ! $screen || 'settings_page_codetrappers-smart-post-sync' === $screen->id ) {
 			return;
 		}
 
@@ -75,7 +75,7 @@ class CoetrappersSmartPostSyncPlugin {
 
 		printf(
 			'<div class="notice notice-info"><p>%s</p></div>',
-			esc_html__( 'Coetrappers Smart Post Sync starter is active. Extend the bootstrap logic in includes/class-coetrappers-smart-post-sync.php.', 'coetrappers-smart-post-sync' )
+			esc_html__( 'Codetrappers Smart Post Sync starter is active. Extend the bootstrap logic in includes/class-codetrappers-smart-post-sync.php.', 'codetrappers-smart-post-sync' )
 		);
 	}
 }
