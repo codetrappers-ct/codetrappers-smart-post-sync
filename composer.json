@@ -1,0 +1,14 @@
+{
+  "name": "coetrappers/coetrappers-smart-post-sync",
+  "description": "Starter plugin for syncing remote records into WordPress posts.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Coetrappers\\\\CoetrappersSmartPostSync\\\\": "includes/"
+    }
+  }
+}
